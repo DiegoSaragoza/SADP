@@ -1,0 +1,64 @@
+#Logo img
+{
+	position: absolute;
+	border: 1px solid black;
+	left: 50px;
+	top: 20px;
+}
+#Titulo 
+{
+	position: absolute;
+	top: 60px;
+	right: 130px;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+}
+#Slogan
+{
+	position: absolute;
+	top: 100px;
+	right: 130px;
+	font-family: "Courier New", Courier, monospace;
+}
+#Cabecalho1
+{
+	border: 1px solid black;
+    padding-top: 100px;
+    background-color: #11b311;
+
+}
+#Cabecalho2
+{
+	border: 1px solid black;
+    padding: 25px 50px 42px 100px;
+    background-color: white;
+}
+#Nome
+{
+	font-weight: bold;
+}
+
+#navbar
+{
+	
+}
+
+#Container
+{
+	position: absolute;
+	border: 1px solid black;
+	padding-right: 65px;
+	padding-bottom: 450px; 
+}
+
+#Rodape
+{
+	border: 1px solid black;
+}
+
+#footer
+{
+	border: 1px solid black;
+	padding-bottom: 0px;
+	padding-top: 650px;
+}
