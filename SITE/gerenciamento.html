@@ -1,0 +1,44 @@
+<link rel=stylesheet href="style.css">
+<script>
+
+	function LED(){
+	var check1 = document.getElementById('check1');
+	if (document.getElementById('check1').checked == true) {
+		document.getElementById('LED').innerHTML = 'Desligar LED';
+	}
+	else{
+		document.getElementById('LED').innerHTML = 'Ligar LED';
+	}
+}
+	function Bomba(){
+	var check2 = document.getElementById('check2');
+	if (document.getElementById('check2').checked == true) {
+		document.getElementById('Bomba').innerHTML = 'Desligar Bomba';
+	}
+	else{
+		document.getElementById('Bomba').innerHTML = 'Ligar Bomba';
+	}
+  }
+</script>
+<p onclick="timeClock()" id="data"></p>
+	<div>
+		<p id="LED">Ligar LED</p>
+	</div>
+<div> <!-- div total -->
+<label class="switch">
+  <input type="checkbox" id="check1" onclick="LED()">
+  <span class="slider round"></span>
+</label>
+<p id="texto"></p>
+</div>
+	<div>
+		<p id="Bomba">Ligar Bomba</p>
+	</div>
+<div> <!-- div total -->
+<label class="switch">
+  <input type="checkbox" id="check2" onclick="Bomba()">
+  <span class="slider round"></span>
+</label>
+<p id="texto"></p>
+</div>
+
