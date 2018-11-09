@@ -1,44 +1,67 @@
-<link rel=stylesheet href="style.css">
-<script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" onload="esconder()">
+<link rel=stylesheet href="style.css" >	
+	<script>
+		function LEDON(){
+			var a = document.getElementById('a');
+			var b = document.getElementById('b');
+			a.style.display  = "";	
+			if (b.style.display == "")
+			{
+				b.style.display = "none";
+			}	
+		}
+		function LEDOFF(){
+			var b = document.getElementById('b');
+			var a = document.getElementById('a');
+			b.style.display  = "";
+			if (a.style.display == "")
+			{
+				a.style.display = "none";
+			}	
 
-	function LED(){
-	var check1 = document.getElementById('check1');
-	if (document.getElementById('check1').checked == true) {
-		document.getElementById('LED').innerHTML = 'Desligar LED';
-	}
-	else{
-		document.getElementById('LED').innerHTML = 'Ligar LED';
-	}
-}
-	function Bomba(){
-	var check2 = document.getElementById('check2');
-	if (document.getElementById('check2').checked == true) {
-		document.getElementById('Bomba').innerHTML = 'Desligar Bomba';
-	}
-	else{
-		document.getElementById('Bomba').innerHTML = 'Ligar Bomba';
-	}
-  }
-</script>
-<p onclick="timeClock()" id="data"></p>
-	<div>
-		<p id="LED">Ligar LED</p>
-	</div>
-<div> <!-- div total -->
-<label class="switch">
-  <input type="checkbox" id="check1" onclick="LED()">
-  <span class="slider round"></span>
-</label>
-<p id="texto"></p>
-</div>
-	<div>
-		<p id="Bomba">Ligar Bomba</p>
-	</div>
-<div> <!-- div total -->
-<label class="switch">
-  <input type="checkbox" id="check2" onclick="Bomba()">
-  <span class="slider round"></span>
-</label>
-<p id="texto"></p>
-</div>
+		}
+		function BON(){
+			var c = document.getElementById('c');
+			c.style.display  = "";
+		}
+		function BOFF(){
+			var d = document.getElementById('d');
+			d.style.display  = "";
+		}
+		function esconder(){
+			var a = document.getElementById('a');
+			var b = document.getElementById('b');
+			var c = document.getElementById('c');
+			var d = document.getElementById('d');
+			a.style.display  = "none";
+			b.style.display  = "none";
+			c.style.display  = "none";
+			d.style.display  = "none";
+		}
 
+	</script>
+
+	 <div class="alert alert-success fade in" id ="a">
+ 		<strong>Sucesso!</strong> O LED foi ligado, favor reconfigurar manualente.</a>
+	 </div>
+	 <div class="alert alert-success fade in" id ="d">
+ 		<strong>Sucesso!</strong> A bomba foi desligada.</a>
+	 </div>
+	 <div class="alert alert-success fade in" id ="b">
+ 		<strong>Sucesso!</strong> O LED foi desligado</a>
+	 </div>
+	 <div class="alert alert-success fade in" id ="c">
+ 		<strong>Sucesso!</strong> A bomba foi ligada.</a>
+	 </div>
+
+
+     <h3><a href = "#" target="" onclick = "LEDON()">Ligar o LED</a></h3>
+
+	 
+     <h3><a href= "#" target="" onclick = "LEDOFF()">Desligar o LED</a></h3>
+
+	 
+     <h3><a href= "#"  target="" onclick = "BON()">Ligar a Bomba</a></h3>
+
+     
+     <h3><a href= "#" target="" onclick = "BOFF()">Desligar a Bomba</a></h3>
