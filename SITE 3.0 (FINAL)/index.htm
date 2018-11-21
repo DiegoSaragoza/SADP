@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+  <title>SADP</title>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width' initial-scale=1'>
+  <base href="/">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <link rel="shortcut icon" type="image/x-icon" href="http://arduino.cc/en/favicon.png" />
+  <link rel="icon" href="https://www.dropbox.com/s/p3g8nomcn4laarf/ico.ico?dl=1">
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+</head>
+<body>
+<nav class='navbar navbar-inverse'>
+  <div class='container-fluid'>
+    <div class='navbar-header'>
+      <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#myNavbar'>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>                        
+      </button>
+      <a class='navbar-brand' href='#'><img src = 'https://www.dropbox.com/s/4yjw1mileyq8vyu/logo3.png?dl=1' alt='Logo' height='50px' width='50px'></a>
+    </div>
+    <div class='collapse navbar-collapse' id='myNavbar'>
+      <ul class='nav navbar-nav'>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class='container-fluid text-center' id = "cont" style="height: 100px;">    
+  <div class='row content'>
+    <div class='col-sm-2 sidenav'>
+      <div id='Links'>
+        <ul style='list-style-type:none'>
+        <li><i class='material-icons'>home</i><p id='i'><a href='home.htm' target='iframe'>Início</a></p></li><br>
+        <li><i class='material-icons'>settings</i><p id='i'><a href='gerencia.htm' target='iframe'>Gerenciamento</a></p></li><br>
+        <li><i class='material-icons'>library_books</i><p id='i'><a href='catalogo.htm' target='iframe'>Catálogo</a></p></li><br>
+        <li><i class='material-icons'>info</i><p id='i'><a href='sobre.html' target='iframe'>Sobre</a></p></li><br>
+      </div>
+    </div>
+    <div class='col-sm-8 text-left'>
+      <iframe name = 'iframe' id="iframe" height = "500" widht = "700" src='home.htm'  style='border:none; position: absolute;'></iframe>
+    </div>
+  </div>
+</div>
+<footer class='container-fluid text-center'>
+  <p>Sistema de Auxílio ao Desenvolvimento do Plantio - SADP®</p>
+  <p>2018</p>
+</footer>
+</body>
+<style type="text/css">
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      height: 70px;
+    }   
+    .row.content {
+      height: 450px
+    }   
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 160%;
+    }   
+    footer {
+      background-color: #555;
+      color: white;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+    }
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+    }
+    img{
+      padding-bottom: 5px;
+    }
+    #Links{
+      padding-right: 5%;
+    }
+    a{
+      color: black;
+    }
+    .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2cf200;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+iframe{
+  height: 50em;
+  width: 80em;
+}
+
+
+</style>
+</html>
+
